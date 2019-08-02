@@ -1,0 +1,59 @@
+.photo-album{
+  &-main{
+    background: #fff;
+  }
+  &-list{
+    padding: 10px 20px;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &-item{
+    display: block;
+    padding: 8px 8px 10px;
+    &:hover{
+      box-shadow: 3px 2px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+    &-img{
+      width: 120px;
+      height: 120px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-title{
+      color: #666;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.photo-list{
+  &-li {
+    width: 30%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  &-img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .photo-list-li{
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .photo-list-li{
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
