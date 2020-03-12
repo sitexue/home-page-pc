@@ -18,7 +18,7 @@ function App() {
             <div className="App-main-container">
               <AppMainRoute/>
             </div>
-            <MainSide></MainSide>
+            {/* <MainSide></MainSide> */}
           </main>
           <footer className="App-footer"></footer>
         </BrowserRouter>

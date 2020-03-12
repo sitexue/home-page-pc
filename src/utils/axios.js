@@ -2,7 +2,7 @@ import axios from "axios";
 import { message } from "antd";
 
 const Axios = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: '/',
   timeout: 10000,
   responseType: "json",
   withCredentials: true, // 是否允许带cookie这些
